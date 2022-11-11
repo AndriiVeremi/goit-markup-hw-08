@@ -10,6 +10,7 @@
 .head-nav {
   display: flex;
   align-items: center;
+  
 }
 
 .logo {
@@ -21,6 +22,14 @@
   &--blue {
   color: $primary-blue-color;
 }
+}
+
+
+.header-nav,
+.header-contact {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .header-nav__list {
