@@ -1,38 +1,31 @@
-@mixin section-mobile () {
+@mixin section-mobile() {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-@mixin section () {
+@mixin section() {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-@mixin social-icon () {
+@mixin social-icon() {
   width: 44px;
   padding: 12px;
   fill: currentColor;
 }
 
-
-@mixin title-mobile () {
- font-weight: 700;
-font-size: 28px;
-line-height: 33px;
-text-align: center;
-letter-spacing: 0.03em;
-color: #212121;
+@mixin title-mobile() {
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
-@mixin title () {
+@mixin title() {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-align: center;
 }
-
-
-
-
-

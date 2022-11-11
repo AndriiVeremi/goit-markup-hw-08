@@ -1,17 +1,18 @@
 // /* СТИЛІ ІНФОРМАЦІЙНОГО БЛОКА */
 
-
 .info-list {
-//   display: flex;
-//   align-items: stretch;
-//   justify-content: space-around;
-//   padding-top: 94px;
+  @include section-mobile();
 }
 
 .info-list__item {
-  margin-bottom: 30px;
-  &:last-child {
-    margin-right: 0;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: 768px) {
+    
+  }
   }
 }
 
@@ -26,7 +27,6 @@
   background-position: center;
   background-color: #f5f4fa;
   border-radius: 4px;
-  
 }
 
 .icon-antena::before {
@@ -63,22 +63,6 @@
   letter-spacing: 0.03em;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // .info-list {
 //   display: flex;
 //   align-items: stretch;
@@ -104,7 +88,7 @@
 //   background-position: center;
 //   background-color: #f5f4fa;
 //   border-radius: 4px;
-  
+
 // }
 
 // .icon-antena::before {
