@@ -1,0 +1,20 @@
+@mixin section () {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+@mixin social-icon () {
+  width: 44px;
+  padding: 12px;
+  fill: currentColor;
+}
+
+@mixin title () {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+

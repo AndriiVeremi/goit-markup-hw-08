@@ -1,0 +1,90 @@
+/* СТИЛІ ШАПКИ САЙТУ */
+
+.header {
+  border-bottom: none;
+  &--border {
+    border-bottom: 1px solid #ececec;
+  }
+}
+
+.head-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: inline-block;
+  font-family: 'Raleway';
+  font-size: 26px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  &--blue {
+  color: $primary-blue-color;
+}
+}
+
+.header-nav__list {
+  display: flex;
+  margin-left: 93px;
+}
+
+.header-contact {
+  display: flex;
+  margin-left: auto;
+  color: $secondary-text-color;
+}
+
+.header-nav__item,
+.header-contact__item {
+  position: relative;
+}
+
+.header-nav__item,
+.header-contact__item {
+  margin-right: 50px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.header-nav__link,
+.header-contact__link {
+  display: inline-flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  transition: color $duration-function $timing-function;
+  &:hover,
+  &:focus {
+    color: $primary-blue-color;
+  }
+}
+
+.header-nav__link--active {
+  color: $primary-blue-color;
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    background-color: $primary-blue-color;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+  }
+}
+
+.header-contact__icon {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  fill: currentColor;
+  transition: fill $duration-function $timing-function;
+  &:hover {
+    fill: $primary-blue-color;
+  }
+}

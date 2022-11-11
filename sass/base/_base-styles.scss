@@ -1,0 +1,18 @@
+/* СТИЛІ КОНТЕЙНЕРА */
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/* ОСНОВНІ СТИЛІ */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: $primary-text-color;
+  margin: 0;
+}

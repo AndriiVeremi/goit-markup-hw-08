@@ -1,0 +1,47 @@
+/* СТИЛІ ПОСТІЙНІ КЛІЄНТИ */
+
+.clients {
+  @include section ();
+}
+
+.clients__title {
+  @include title ();
+}
+
+.clients-list {
+  display: inline-flex;
+}
+
+.clients-list__item {
+  margin-right: 30px; 
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.clients-list__link {
+  display: block;
+  padding: 0;
+  color: $color-icon;
+  background-color: $white-color-text;
+  width: 170px;
+  height: 92px;
+  cursor: pointer;
+  border: 1px solid $color-icon;
+  border-radius: 4px;
+  transition: border $duration-function $timing-function;
+  &:hover {
+    border: 1px solid $primary-blue-color;
+  } 
+}
+
+.clients-list__icon {
+  height: 92px;
+  width: 170px;
+  fill: currentColor;
+  transition: fill $duration-function $timing-function;
+  &:hover {
+    fill: $primary-blue-color;
+  }
+ 
+}
