@@ -605,6 +605,15 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .info-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .info-list__item {
@@ -614,6 +623,20 @@ body {
     margin-bottom: 0;
   }
 }
+@media screen and (min-width: 768px) {
+  .info-list__item {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .info-list__item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .info-list__item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+}
+
 .info-list__item::before {
   display: block;
   content: "";
@@ -662,7 +685,7 @@ body {
 }
 
 /* Стилі інфо блока */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
   .what-dowedo {
     display: none;
   }
@@ -703,6 +726,19 @@ body {
 }
 .person-list__item:last-child {
   margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .person-list__item {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .person-list__item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .person-list__item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
 }
 
 .user-meta {
@@ -1027,6 +1063,11 @@ body {
   height: 50px;
   padding: 16px 15px;
   color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .subscript__form {
+    width: 450px;
+  }
 }
 
 .subscript__btn {
