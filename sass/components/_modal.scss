@@ -1,184 +1,184 @@
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  opacity: 1;
-  transition: opacity $duration-function $timing-function;
-}
+// .backdrop {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba(0, 0, 0, 0.3);
+//   opacity: 1;
+//   transition: opacity $duration-function $timing-function;
+// }
 
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
+// .backdrop.is-hidden {
+//   opacity: 0;
+//   pointer-events: none;
+// }
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.8);
-}
+// .backdrop.is-hidden .modal {
+//   transform: translate(-50%, -50%) scale(0.8);
+// }
 
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 528px;
-  height: 581px;
-  background-color: $white-color-text;
-  padding: 40px;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform $duration-function $timing-function;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
-              0px 1px 1px rgba(0, 0, 0, 0.14),
-              0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
+// .modal {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   width: 528px;
+//   height: 581px;
+//   background-color: $white-color-text;
+//   padding: 40px;
+//   transform: translate(-50%, -50%) scale(1);
+//   transition: transform $duration-function $timing-function;
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+//               0px 1px 1px rgba(0, 0, 0, 0.14),
+//               0px 2px 1px rgba(0, 0, 0, 0.2);
+//   border-radius: 4px;
+// }
 
-.modal-close {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-right: 8px;
-  margin-top: 8px;
-  padding: 6px;
-  background-color: $white-color-text;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  height: 30px;
-  width: 30px;
-  cursor: pointer;
-  transition: fill $duration-function $timing-function;
-  &:hover,
-  &:focus {
-    fill: $primary-blue-color;
-  }
-}
+// .modal-close {
+//   display: block;
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   margin-right: 8px;
+//   margin-top: 8px;
+//   padding: 6px;
+//   background-color: $white-color-text;
+//   border: 1px solid rgba(0, 0, 0, 0.1);
+//   border-radius: 50%;
+//   height: 30px;
+//   width: 30px;
+//   cursor: pointer;
+//   transition: fill $duration-function $timing-function;
+//   &:hover,
+//   &:focus {
+//     fill: $primary-blue-color;
+//   }
+// }
 
-.callback__title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: $primary-text-color;
-}
+// .callback__title {
+//   margin-top: 0;
+//   margin-bottom: 30px;
+//   font-weight: 700;
+//   font-size: 20px;
+//   line-height: 23px;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+//   color: $primary-text-color;
+// }
 
-.form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin-bottom: 28px;
-  &:nth-child(5) {
-    margin-bottom: 20px;
-  }
-}
+// .form {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   position: relative;
+//   margin-bottom: 28px;
+//   &:nth-child(5) {
+//     margin-bottom: 20px;
+//   }
+// }
 
-.form__input {
-  width: 100%;
-  height: 40px;
-  padding: 12px 42px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  transition: border-color $duration-function $timing-function;
-  &:focus {
-    border-color: $primary-blue-color;
-  }
-  &::placeholder {
-    color: rgba(117, 117, 117, 0.5);
-  }
-}
+// .form__input {
+//   width: 100%;
+//   height: 40px;
+//   padding: 12px 42px;
+//   border: 1px solid rgba(33, 33, 33, 0.2);
+//   border-radius: 4px;
+//   transition: border-color $duration-function $timing-function;
+//   &:focus {
+//     border-color: $primary-blue-color;
+//   }
+//   &::placeholder {
+//     color: rgba(117, 117, 117, 0.5);
+//   }
+// }
 
-.form__input--textarea {
-  height: 120px;
-  padding: 16px 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  resize: none;
-}
+// .form__input--textarea {
+//   height: 120px;
+//   padding: 16px 12px;
+//   line-height: 14px;
+//   letter-spacing: 0.01em;
+//   resize: none;
+// }
 
-.form__input:focus ~ .form__icon {
-  fill: $primary-blue-color;
-}
+// .form__input:focus ~ .form__icon {
+//   fill: $primary-blue-color;
+// }
 
-.form__label {
-  position: absolute;
-  top: -17px;
-  left: 0;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: $secondary-text-color;
-}
+// .form__label {
+//   position: absolute;
+//   top: -17px;
+//   left: 0;
+//   font-size: 12px;
+//   line-height: 14px;
+//   letter-spacing: 0.01em;
+//   color: $secondary-text-color;
+// }
 
-.form__icon {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-  fill: currentColor;
-  transition: fill $duration-function $timing-function;
-}
+// .form__icon {
+//   display: block;
+//   position: absolute;
+//   top: 50%;
+//   left: 10px;
+//   transform: translateY(-50%);
+//   fill: currentColor;
+//   transition: fill $duration-function $timing-function;
+// }
 
-.police__input {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
+// .police__input {
+//   position: absolute;
+//   white-space: nowrap;
+//   width: 1px;
+//   height: 1px;
+//   overflow: hidden;
+//   border: 0;
+//   padding: 0;
+//   clip: rect(0 0 0 0);
+//   clip-path: inset(50%);
+//   margin: -1px;
+// }
 
-.police__icon {
-  border: 2px solid #000;
-  border-radius: 2px;
-  margin-right: 7px;
-  transition: background-color $duration-function $timing-function;
-}
+// .police__icon {
+//   border: 2px solid #000;
+//   border-radius: 2px;
+//   margin-right: 7px;
+//   transition: background-color $duration-function $timing-function;
+// }
 
-.police__input:checked + .police__icon {
-  background-color: $primary-blue-color;
-  border: none;
-}
+// .police__input:checked + .police__icon {
+//   background-color: $primary-blue-color;
+//   border: none;
+// }
 
-.police__meta { 
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: $secondary-text-color;
-  margin: 0;
-}
+// .police__meta { 
+//   font-size: 14px;
+//   line-height: 24px;
+//   letter-spacing: 0.03em;
+//   color: $secondary-text-color;
+//   margin: 0;
+// }
 
-.police__link {
-  color: $primary-blue-color;
-  text-decoration: underline;
-}
+// .police__link {
+//   color: $primary-blue-color;
+//   text-decoration: underline;
+// }
 
-.modal-btn {
-  display: block;
-  margin: 0 auto;
-  padding: 10px 52px;
-  background-color: $primary-blue-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
+// .modal-btn {
+//   display: block;
+//   margin: 0 auto;
+//   padding: 10px 52px;
+//   background-color: $primary-blue-color;
+//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//   border-radius: 4px;
+//   border: none;
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.06em;
-  color: $white-color-text;
-  cursor: pointer;
-  transition: background-color $duration-function $timing-function;
-  &:hover {
-    background-color: #188ce8;
-  }
-}
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 30px;
+//   letter-spacing: 0.06em;
+//   color: $white-color-text;
+//   cursor: pointer;
+//   transition: background-color $duration-function $timing-function;
+//   &:hover {
+//     background-color: #188ce8;
+//   }
+// }

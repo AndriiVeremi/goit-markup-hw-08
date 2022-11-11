@@ -1,67 +1,86 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.min.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Домашнє завдання</title>
   </head>
 
   <body>
-
     <!--ШАПКА САЙТУ-->
 
     <header class="header">
       <div class="container head-nav">
         <a href="/" class="logo"><span class="logo logo--blue">Web</span>Studio</a>
-       
+        <button 
+          type="button" 
+          class="menu-button is-open"
+          aria-expended="false"
+          aria-controls="menu-container"
+          data-menu-button >         
+            <svg width="40" height="40" aria-label="Переключатель меню" >
+              <use class="icon-menu" href="./images/icons/icons.svg#mobile-close"></use>
+              <use class="icon-close" href="./images/icons/icons.svg#mobile-menu"></use>
+            </svg>
+          </button>
+          <div class="menu-container" id="menu-container" data-menu>
+          <div class="navigation"></div>
+          <div class="contacts"></div>
+          </div>
         <div class="container-nav">
-        <nav class="header-nav">
-          <ul class="header-nav__list">
-            <li class="header-nav__item">
-              <a href="./index.html" class="header-nav__link header-nav__link--active">Студія</a>
+          <nav class="header-nav">
+            <ul class="header-nav__list">
+              <li class="header-nav__item">
+                <a href="./index.html" class="header-nav__link header-nav__link--active">Студія</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="./portfolio.html" class="header-nav__link">Портфоліо</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header-contact">
+            <li class="header-contact__item">
+              <a href="mailto:info@devstudio.com" class="header-contact__link">
+                <svg width="16" height="12" class="header-contact__icon">
+                  <use href="./images/icons/icons.svg#mail"></use></svg
+                >info@devstudio.com</a
+              >
             </li>
-            <li class="header-nav__item">
-              <a href="./portfolio.html" class="header-nav__link">Портфоліо</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="#" class="header-nav__link">Контакти</a>
+            <li class="header-contact__item">
+              <a href="tel:+380961111111" class="header-contact__link">
+                <svg width="10" height="16" class="header-contact__icon">
+                  <use href="./images/icons/icons.svg#tel"></use></svg
+                >+38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="header-contact">
-          <li class="header-contact__item">
-            <a href="mailto:info@devstudio.com" class="header-contact__link">
-              <svg width="16" height="12" class="header-contact__icon">
-                <use href="./images/icons/icons.svg#mail"></use>
-              </svg>info@devstudio.com</a>
-          </li>
-          <li class="header-contact__item">
-            <a href="tel:+380961111111" class="header-contact__link">
-              <svg width="10" height="16" class="header-contact__icon">
-                <use href="./images/icons/icons.svg#tel"></use>
-              </svg>+38 096 111 11 11</a>
-          </li>
-        </ul>
         </div>
-
       </div>
     </header>
 
     <main>
-
       <!--БЛОК ГЕРОЙ-->
 
       <section class="hero">
         <h1 class="hero__title">
-          Ефективні рішення для <br>
+          Ефективні рішення для <br />
           вашого бізнесу
         </h1>
         <button type="button" data-modal-open class="hero__button">Замовити послугу</button>
@@ -108,15 +127,30 @@
           <h2 class="what-dowedo__title">Чим ми займаємося</h2>
           <ul class="product-list">
             <li class="product-list__item">
-              <img src="./images/what_dowedo_img_1.jpg" alt="фото компютера" width="370" height="294" >
+              <img
+                src="./images/what_dowedo_img_1.jpg"
+                alt="фото компютера"
+                width="370"
+                height="294"
+              />
               <p class="product-list__text">Десктопні додатки</p>
             </li>
             <li class="product-list__item">
-              <img src="./images/what_dowedo_img_2.jpg" alt="фото компютера" width="370" height="294" >
+              <img
+                src="./images/what_dowedo_img_2.jpg"
+                alt="фото компютера"
+                width="370"
+                height="294"
+              />
               <p class="product-list__text">Мобільні додатки</p>
             </li>
             <li class="product-list__item">
-              <img src="./images/what_dowedo_img_3.jpg" alt="фото планшета" width="370" height="294" >
+              <img
+                src="./images/what_dowedo_img_3.jpg"
+                alt="фото планшета"
+                width="370"
+                height="294"
+              />
               <p class="product-list__text">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -130,8 +164,14 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="person-list">
             <li class="person-list__item">
-               <div class="user-meta">
-                <img src="./images/team_img_1.jpg" class="user-meta__foto" alt="фото Ігора Дем'яненка" width="270" height="260" >              
+              <div class="user-meta">
+                <img
+                  src="./images/team_img_1.jpg"
+                  class="user-meta__foto"
+                  alt="фото Ігора Дем'яненка"
+                  width="270"
+                  height="260"
+                />
                 <h3 class="user-meta__name">Ігор Дем'яненко</h3>
                 <p class="user-meta__work">Product Designer</p>
 
@@ -171,7 +211,13 @@
             </li>
             <li class="person-list__item">
               <div class="user-meta">
-              <img src="./images/team_img_2.jpg" class="user-meta__foto" alt="фото Ольги Рєпіної" width="270" height="260">              
+                <img
+                  src="./images/team_img_2.jpg"
+                  class="user-meta__foto"
+                  alt="фото Ольги Рєпіної"
+                  width="270"
+                  height="260"
+                />
                 <h3 class="user-meta__name">Ольга Рєпіна</h3>
                 <p class="user-meta__work">Frontend Developer</p>
 
@@ -212,9 +258,15 @@
 
             <li class="person-list__item">
               <div class="user-meta">
-              <img src="./images/team_img_3.jpg" class="user-meta__foto" alt="фото Миколи Тарасова" width="270" height="260" >
-              <h3 class="user-meta__name">Микола Тарасов</h3>
-              <p class="user-meta__work">Marketing</p>
+                <img
+                  src="./images/team_img_3.jpg"
+                  class="user-meta__foto"
+                  alt="фото Миколи Тарасова"
+                  width="270"
+                  height="260"
+                />
+                <h3 class="user-meta__name">Микола Тарасов</h3>
+                <p class="user-meta__work">Marketing</p>
 
                 <!-- Кнопки соц.мережі -->
 
@@ -252,7 +304,13 @@
             </li>
             <li class="person-list__item">
               <div class="user-meta">
-              <img src="./images/team_img_4.jpg" class="user-meta__foto" alt="фото Михайла Єрмакова" width="270" height="260" >             
+                <img
+                  src="./images/team_img_4.jpg"
+                  class="user-meta__foto"
+                  alt="фото Михайла Єрмакова"
+                  width="270"
+                  height="260"
+                />
                 <h3 class="user-meta__name">Михайло Єрмаков</h3>
                 <p class="user-meta__work">UI Designer</p>
 
@@ -351,22 +409,29 @@
 
     <footer class="footer">
       <div class="container footer-nav">
-        
         <div class="footer-adres">
-          <a href="/" class="logo footer-adres__logo"><span class="logo logo--blue">Web</span>Studio</a>         
+          <a href="/" class="logo footer-adres__logo"
+            ><span class="logo logo--blue">Web</span>Studio</a
+          >
           <address class="footer-contact">
             <ul class="footer-contact__list">
               <li class="footer-contact__item">
-                <a class="footer-contact__link footer-contact__link--color" href="https://goo.gl/maps/62NH4mXpDvtfNdRu7"  target="_blank" rel="noreferrer noopener nofollow">
-                  м. Київ, пр-т Лесі Українки, 26</a>
+                <a
+                  class="footer-contact__link footer-contact__link--color"
+                  href="https://goo.gl/maps/62NH4mXpDvtfNdRu7"
+                  target="_blank"
+                  rel="noreferrer noopener nofollow"
+                >
+                  м. Київ, пр-т Лесі Українки, 26</a
+                >
               </li>
               <li class="footer-contact__item">
-                <a class="footer-contact__link" href="tel:+380961111111">
-                  +38 096 111 11 11</a>
+                <a class="footer-contact__link" href="tel:+380961111111"> +38 096 111 11 11</a>
               </li>
               <li class="footer-contact__item">
                 <a class="footer-contact__link" href="mailto:info@devstudio.com">
-                  info@devstudio.com</a>
+                  info@devstudio.com</a
+                >
               </li>
             </ul>
           </address>
@@ -412,11 +477,7 @@
 
         <div class="subscript">
           <h3 class="subscript__title">Підпишіться на розсилку</h3>
-          <input
-            type="email"
-            class="subscript__form"
-            name="email"
-            placeholder="E-mail">
+          <input type="email" class="subscript__form" name="email" placeholder="E-mail" />
           <button type="submit" class="subscript__btn">
             Підписатися
             <svg width="24" height="24" class="subscript__icon">
@@ -439,21 +500,21 @@
         <form class="callback" autocomplete="off">
           <p class="callback__title">Залиште свої дані, ми вам передзвонимо</p>
           <div class="form">
-            <input type="text" class="form__input" name="user-name" id="name">
+            <input type="text" class="form__input" name="user-name" id="name" />
             <label for="name" class="form__label">Ім'я</label>
             <svg width="18" height="18" class="form__icon">
               <use href="./images/icons/icons.svg#person"></use>
             </svg>
           </div>
           <div class="form">
-            <input type="tel" class="form__input" name="user-tel" id="tel">
+            <input type="tel" class="form__input" name="user-tel" id="tel" />
             <label for="tel" class="form__label">Телефон</label>
             <svg width="18" height="18" class="form__icon">
               <use href="./images/icons/icons.svg#phone"></use>
             </svg>
           </div>
           <div class="form">
-            <input type="email" class="form__input" name="user-mail" id="mail">
+            <input type="email" class="form__input" name="user-mail" id="mail" />
             <label for="mail" class="form__label">Пошта</label>
             <svg width="18" height="18" class="form__icon">
               <use href="./images/icons/icons.svg#email"></use>
@@ -473,14 +534,14 @@
 
           <div class="form">
             <label class="police">
-              <input type="checkbox" class="police__input" name="user-police">
+              <input type="checkbox" class="police__input" name="user-police" />
               <svg width="16" height="15" class="police__icon">
                 <use href="./images/icons/icons.svg#icon-check"></use>
               </svg>
             </label>
-              <p class="police__meta">
-                Погоджуюся з розсилкою та приймаю <a class="police__link" href="#">Умови договору</a>
-              </p>           
+            <p class="police__meta">
+              Погоджуюся з розсилкою та приймаю <a class="police__link" href="#">Умови договору</a>
+            </p>
           </div>
           <button type="submit" class="modal-btn">Відправити</button>
         </form>
@@ -490,5 +551,6 @@
     <!-- Scripts для сайта -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
