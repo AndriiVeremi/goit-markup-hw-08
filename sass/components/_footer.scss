@@ -8,8 +8,13 @@
 
 .footer-nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+    flex-wrap: wrap;
+  }
 }
 
 .footer-adres__logo {
