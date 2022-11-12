@@ -57,12 +57,12 @@
   }
 }
 
-// /* СТИЛІ НАШІ РОБОТИ */
+/* СТИЛІ НАШІ РОБОТИ */
 
-// .work-list {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 // .work-list__item {
 //   width: calc((100% - 60px) / 3);
@@ -84,58 +84,58 @@
 //   }
 // }
 
-// .portfolio-product__img {
-//   overflow: hidden;
-//   position: relative;
-// }
+.portfolio-product__img {
+  overflow: hidden;
+  position: relative;
+}
 
-// .portfolio-product__overlay {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   background: rgba(33, 150, 243, 0.9);
-//   transform: translateY(100%);
-//   transition: transform $duration-function $timing-function;
-//   .work-list__item:hover & {
-//     transform: translateY(0%);
-//   }
-// }
+.portfolio-product__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform $duration-function $timing-function;
+  .work-list__item:hover & {
+    transform: translateY(0%);
+  }
+}
 
-// .portfolio-product__info {
-//   position: absolute;
-//   display: flex;
-//   padding: 63px 24px;
-// }
+.portfolio-product__info {
+  position: absolute;
+  display: flex;
+  padding: 63px 24px;
+}
 
-// .portfolio-product__text {
-//   margin: 0;
-//   font-size: 18px;
-//   line-height: 28px;
-//   letter-spacing: 0.03em;
-//   color: $white-color-text;
-// }
+.portfolio-product__text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: $white-color-text;
+}
 
-// .portfolio-meta {
-//   padding: 20px 24px;
-//   background: $white-color-text;
-//   border: 1px solid #eeeeee;
-//   border-top: inherit;
-// }
+.portfolio-meta {
+  padding: 20px 24px;
+  background: $white-color-text;
+  border: 1px solid #eeeeee;
+  border-top: inherit;
+}
 
-// .portfolio-meta__title {
-//   margin-bottom: 4px;
-//   font-size: 18px;
-//   line-height: 2;
-//   letter-spacing: 0.06em;
-//   color: $primary-text-color;
-// }
+.portfolio-meta__title {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $primary-text-color;
+}
 
-// .portfolio-meta__text {
-//   margin: 0;
-//   font-size: 16px;
-//   line-height: 1.8;
-//   letter-spacing: 0.03em;
-//   color: $secondary-text-color;
-// }
+.portfolio-meta__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: $secondary-text-color;
+}
