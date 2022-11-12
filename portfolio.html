@@ -19,34 +19,58 @@
 
       <header class="header header--border">
       <div class="container head-nav">
-       <a href="/" class="logo"><span class="logo logo--blue">Web</span>Studio</a>
-        <nav class="header-nav">
-          <ul class="header-nav__list">
-            <li class="header-nav__item">
-              <a href="./index.html" class="header-nav__link">Студія</a>
+        <a href="/" class="logo"><span class="logo logo--blue">Web</span>Studio</a>
+        <button 
+          type="button" 
+          class="menu-button is-open"
+          aria-expended="false"
+          aria-controls="menu-container"
+          data-menu-button >         
+            <svg width="40" height="40" aria-label="Переключатель меню" >
+              <use class="icon-menu" href="./images/icons/icons.svg#mobile-close"></use>
+              <use class="icon-close" href="./images/icons/icons.svg#mobile-menu"></use>
+            </svg>
+          </button>
+          <div class="menu-container" id="menu-container" data-menu>
+
+        <div class="container-nav">
+          <nav class="header-nav">
+            <ul class="header-nav__list">
+              <li class="header-nav__item">
+                <a href="./index.html" class="header-nav__link">Студія</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="./portfolio.html" class="header-nav__link header-nav__link--active">Портфоліо</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header-contact">
+            <li class="header-contact__item">
+              <a href="tel:+380961111111" class="header-contact__link header-contact__link--blue">
+                <svg width="10" height="16" class="header-contact__icon">
+                  <use href="./images/icons/icons.svg#tel"></use></svg>+38 096 111 11 11</a>
             </li>
-            <li class="header-nav__item">
-              <a href="./portfolio.html" class="header-nav__link header-nav__link--active">Портфоліо</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="#" class="header-nav__link">Контакти</a>
+            <li class="header-contact__item">
+              <a href="mailto:info@devstudio.com" class="header-contact__link">
+                <svg width="16" height="12" class="header-contact__icon">
+                  <use href="./images/icons/icons.svg#mail"></use></svg>info@devstudio.com</a>
             </li>
           </ul>
-        </nav>
-        <ul class="header-contact">
-          <li class="header-contact__item">
-            <a href="mailto:info@devstudio.com" class="header-contact__link">
-              <svg width="16" height="12" class="header-contact__icon">
-                <use href="./images/icons/icons.svg#mail"></use>
-              </svg>info@devstudio.com</a>
-          </li>
-          <li class="header-contact__item">
-            <a href="tel:+380961111111" class="header-contact__link">
-              <svg width="10" height="16" class="header-contact__icon">
-                <use href="./images/icons/icons.svg#tel"></use>
-              </svg>+38 096 111 11 11</a>
-          </li>
-        </ul>
+
+          <div class="social-box">
+            <ul class="social-box__list">
+            <li class="social-box__item">Instagram</li>
+            <li class="social-box__item">Twitter</li>
+            <li class="social-box__item">Facebook</li>
+            <li class="social-box__item">LinkedIn</li>
+          </ul>
+          </div>
+          
+        </div>
+          </div>
       </div>
     </header>
 
@@ -354,6 +378,10 @@
         </div>
       </div>
     </footer>
+
+        <!-- Scripts для сайта -->
+
+    <script src="./js/menu.js"></script>
     
   </body>
 </html>
