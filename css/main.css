@@ -295,7 +295,7 @@ li {
 /* Змінні CSS */
 /* СТИЛІ КОНТЕЙНЕРА */
 .container {
-  max-width: 1600px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -577,6 +577,7 @@ body {
 }
 
 /* Стилі шапки сайта*/
+/* СТИЛІ ГОЛОВНОГО БЛОКА */
 .hero {
   height: 400px;
   max-width: 1600px;
@@ -632,6 +633,7 @@ body {
 }
 
 /* Стилі блока герой */
+/* СТИЛІ ІНФОРМАЦІЙНОГО БЛОКА */
 .info-list {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -823,7 +825,7 @@ body {
 .person-list__item:last-child {
   margin-bottom: 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1599px) {
   .person-list__item {
     width: calc((100% - 30px) / 2);
     margin-right: 30px;
@@ -833,6 +835,19 @@ body {
     margin-right: 0;
   }
   .person-list__item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .person-list__item {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .person-list__item:nth-child(4n) {
+    margin-right: 0;
+  }
+  .person-list__item:nth-last-child(-n+4) {
     margin-bottom: 0;
   }
 }
@@ -907,6 +922,7 @@ body {
 }
 
 /* Стилі блока Наша команда */
+/* СТИЛІ ПОСТІЙНІ КЛІЄНТИ */
 .clients {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -929,9 +945,19 @@ body {
         flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 1600px) {
+  .clients-list {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
 
 .clients-list__item {
   margin-bottom: 30px;
+}
+.clients-list__item:last-child {
+  margin-right: 0;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .clients-list__item {
@@ -957,6 +983,15 @@ body {
     margin-bottom: 0;
   }
 }
+@media screen and (min-width: 1600px) {
+  .clients-list__item {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+  .clients-list__item:last-child {
+    margin-right: 0;
+  }
+}
 
 .clients-list__link {
   text-align: center;
@@ -978,19 +1013,20 @@ body {
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .clients-list__link {
     width: 210px;
-    height: 92px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1599px) {
   .clients-list__link {
     width: 226px;
-    height: 92px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .clients-list__link {
+    width: 170px;
   }
 }
 
 .clients-list__icon {
-  height: 92px;
-  width: 210px;
   fill: currentColor;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1038,6 +1074,11 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1599px) {
   .footer-adres {
     margin-left: 76px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .footer-adres {
+    margin-right: 70px;
   }
 }
 
@@ -1153,22 +1194,29 @@ body {
   fill: currentColor;
 }
 
-.subscript {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
+@media screen and (max-width: 1599px) {
+  .subscript {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1599px) {
   .subscript {
     margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .subscript {
+    margin-left: auto;
   }
 }
 
@@ -1183,7 +1231,6 @@ body {
 }
 
 .subscript__form {
-  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background: #2f303a;
@@ -1192,9 +1239,19 @@ body {
   padding: 16px 15px;
   color: #ffffff;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1599px) {
+  .subscript__form {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1599px) {
   .subscript__form {
     width: 450px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .subscript__form {
+    width: 358px;
   }
 }
 

@@ -1,6 +1,5 @@
 /* СТИЛІ НАША КОМАНДА */
 
-
 .team {
   @include section-mobile();
   background-color: #f5f4fa;
@@ -20,23 +19,34 @@
   width: 100%;
   margin-bottom: 30px;
   background-color: $white-color-text;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
               0px 1px 1px rgba(0, 0, 0, 0.14),
               0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  
   &:last-child {
     margin-bottom: 0;
   }
-    @media screen and (min-width: 768px) {
-    width: calc((100% - 30px) / 2);
-     margin-right: 30px;
-    margin-bottom: 30px;
 
+  @media screen and (min-width: 768px) and (max-width: 1599px) {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
     &:nth-child(2n) {
       margin-right: 0;
     }
     &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 1600px) {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 4) {
       margin-bottom: 0;
     }
   }
@@ -69,7 +79,7 @@
 
 .social-list {
   display: flex;
- justify-content: center;
+  justify-content: center;
 }
 
 .social-list__item {
@@ -101,129 +111,3 @@
     fill: $white-color-text;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// .team {
-//   @include section();
-//   background-color: #f5f4fa;
-// }
-
-// .team__title {
-//   @include title();
-// }
-
-// .person-list {
-//   display: flex;
-//   flex-wrap: wrap;
-//   text-align: center;
-// }
-
-// .person-list__item {
-//   width: calc((100% - 90px) / 4);
-//   margin-right: 30px;
-//   margin-bottom: 30px;
-//   background-color: $white-color-text;
-//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-//               0px 1px 1px rgba(0, 0, 0, 0.14),
-//               0px 2px 1px rgba(0, 0, 0, 0.2);
-//   border-radius: 0px 0px 4px 4px;
-//   &:nth-child(4n) {
-//     margin-right: 0;
-//   }
-//   &:nth-last-child(-n + 4) {
-//     margin-bottom: 0;
-//   }
-// }
-
-// .user-meta {
-//   padding-top: 30px;
-//   padding-bottom: 30px;
-// }
-
-// .user-meta__foto {
-//   margin-bottom: 30px;
-// }
-
-// .user-meta__name {
-//   margin-bottom: 10px;
-//   font-weight: 500;
-//   font-size: 16px;
-//   line-height: 1.2;
-//   letter-spacing: 0.03em;
-// }
-
-// .user-meta__work {
-//   margin-top: 0;
-//   margin-bottom: 16px;
-//   font-size: 16px;
-//   line-height: 1;
-//   letter-spacing: 0.03em;
-// }
-
-// .social-list {
-//   display: flex;
-//   padding-left: 32px;
-//   padding-right: 32px;
-// }
-
-// .social-list__item {
-//   margin-right: 10px;
-//   &:last-child {
-//     margin-right: 0;
-//   }
-// }
-
-// .social-list__button {
-//   display: flex;
-//   color: $color-icon;
-//   background-color: $white-color-text;
-//   height: 44px;
-//   cursor: pointer;
-//   border-radius: 50%;
-//   transition: background-color $duration-function $timing-function;
-//   &:hover,
-//   &:focus {
-//     background-color: $primary-blue-color;
-//     fill: $white-color-text;
-//   }
-// }
-
-// .social-list__icon {
-//   @include social-icon();
-//   transition: fill $duration-function $timing-function;
-//   &:hover {
-//     fill: $white-color-text;
-//   }
-// }
