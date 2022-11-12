@@ -1,16 +1,28 @@
 /* СТИЛІ ПОСТІЙНІ КЛІЄНТИ */
 
 .clients {
-  @include section-mobile();
+   @media screen and (max-width: 1599px) {
+    @include section-mobile(); 
+  }
+ 
+  @media screen and (min-width: 1600px) {
+    @include section();
+  }
 }
 
 .clients__title {
-  @include title-mobile();
+    @media screen and (max-width: 1599px) {
+     @include title-mobile();
+  }
+ 
+  @media screen and (min-width: 1600px) {
+    @include title();
+  }
 }
 
 .clients-list {
   
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) and (max-width: 1599px) {
     display: flex;
     flex-wrap: wrap;
   }

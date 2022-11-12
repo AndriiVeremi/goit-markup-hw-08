@@ -29,4 +29,7 @@ li {
 }
 
 
-
+:focus,
+:active {
+  outline: #2196f3;
+}

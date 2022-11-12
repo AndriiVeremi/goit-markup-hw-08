@@ -5,12 +5,13 @@
     display: none;
   }
 }
+
 .what-dowedo {
-  @include section ();
+  @include section();
 }
 
 .what-dowedo__title {
-  @include title ();
+  @include title();
 }
 
 .product-list {

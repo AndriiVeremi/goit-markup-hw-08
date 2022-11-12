@@ -4,6 +4,7 @@
 @import "./base/base-styles";          /* Стилі контейнера і body */
 @import "./utils/mixin";               /* Mixin */
 @import "./utils/visually-hidden";     /* visually-hidden */
+@import "./components/mobile-menu";    /* Випадаюче меню */
 @import "./components/header";         /* Стилі шапки сайта*/
 @import "./components/hero";           /* Стилі блока герой */
 @import "./components/info";           /* Стилі інфо блока */

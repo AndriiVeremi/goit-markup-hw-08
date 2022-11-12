@@ -8,27 +8,26 @@
 
 .footer-nav {
   display: flex;
-  
+
   @media screen and (max-width: 767px) and (max-width: 1599px) {
     flex-direction: column;
     align-items: center;
   }
-  
+
   @media screen and (min-width: 768px) and (max-width: 1599px) {
     flex-wrap: wrap;
   }
 }
 
 .footer-adres {
-  
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
-  
+
   @media screen and (min-width: 768px) and (max-width: 1599px) {
     margin-left: 76px;
   }
-  
+
   @media screen and (min-width: 1600px) {
     margin-right: 70px;
   }
@@ -37,10 +36,10 @@
 .footer-adres__logo {
   margin-bottom: 20px;
   color: $white-color-text;
-  
+
   @media screen and (max-width: 1599px) {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -49,9 +48,11 @@
 }
 
 .footer-contact__list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @media screen and (max-width: 1599px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .footer-contact__item {
@@ -81,7 +82,6 @@
 }
 
 .footer-social {
-  
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
@@ -92,13 +92,16 @@
 }
 
 .footer-social__title {
-  text-align: center;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $white-color-text;
   margin-bottom: 20px;
+
+  @media screen and (max-width: 1599px) {
+    text-align: center;
+  }
 }
 
 .footer-social__list {
@@ -132,18 +135,17 @@
 }
 
 .subscript {
-  
   @media screen and (max-width: 1599px) {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
-  
+
   @media screen and (min-width: 768px) and (max-width: 1599px) {
     margin-top: 60px;
   }
- 
+
   @media screen and (min-width: 1600px) {
     margin-left: auto;
   }
@@ -167,15 +169,15 @@
   height: 50px;
   padding: 16px 15px;
   color: $white-color-text;
-  
+
   @media screen and (max-width: 1599px) {
     margin-bottom: 20px;
   }
-  
+
   @media screen and (min-width: 768px) and (max-width: 1599px) {
     width: 450px;
   }
-  
+
   @media screen and (min-width: 1600px) {
     width: 358px;
   }

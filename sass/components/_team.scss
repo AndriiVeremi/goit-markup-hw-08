@@ -1,12 +1,26 @@
 /* СТИЛІ НАША КОМАНДА */
 
 .team {
-  @include section-mobile();
   background-color: #f5f4fa;
+  
+  @media screen and (max-width: 1599px) {
+    @include section-mobile(); 
+  }
+ 
+  @media screen and (min-width: 1600px) {
+    @include section();
+  }
 }
 
 .team__title {
-  @include title-mobile();
+   @media screen and (max-width: 1599px) {
+     @include title-mobile();
+  }
+ 
+  @media screen and (min-width: 1600px) {
+    @include title();
+  }
+  
 }
 
 .person-list {
