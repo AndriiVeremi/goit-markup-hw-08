@@ -29,3 +29,16 @@
   letter-spacing: 0.03em;
   text-align: center;
 }
+
+@mixin column-flex() {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin center-flex() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

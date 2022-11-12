@@ -72,9 +72,7 @@
 }
 
 .form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include center-flex();
   position: relative;
   margin-bottom: 28px;
   &:nth-child(5) {
