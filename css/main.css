@@ -1169,6 +1169,12 @@ body {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+@media screen and (min-width: 1600px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
 
 .modal-close {
   display: block;
@@ -1309,11 +1315,17 @@ body {
 }
 
 .police__meta {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: #757575;
   margin: 0;
+}
+@media screen and (min-width: 1600px) {
+  .police__meta {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .police__link {

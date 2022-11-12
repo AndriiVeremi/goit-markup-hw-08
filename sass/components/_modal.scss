@@ -28,10 +28,14 @@
   padding: 40px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform $duration-function $timing-function;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
-              0px 1px 1px rgba(0, 0, 0, 0.14),
-              0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  @media screen and (min-width: 1600px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-close {
@@ -149,9 +153,14 @@
   border: none;
 }
 
-.police__meta { 
-  font-size: 14px;
-  line-height: 24px;
+.police__meta {
+  font-size: 12px;
+  line-height: 14px;
+
+  @media screen and (min-width: 1600px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
   letter-spacing: 0.03em;
   color: $secondary-text-color;
   margin: 0;
