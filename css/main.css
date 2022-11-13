@@ -380,7 +380,7 @@ img {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 48px 40px;
+  padding: 5vmax 5vmin;
   background-color: #fff;
   z-index: 999;
   -webkit-transform: translateX(100%);
@@ -404,7 +404,7 @@ img {
 }
 
 .social-box {
-  margin-top: 64px;
+  margin-top: 8vmax;
 }
 
 .social-box__list {
