@@ -64,7 +64,7 @@
 
 .header-contact {
   @media screen and (max-width: 767px) {
-    margin-top: 280px;
+    margin-top: 30vh;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -183,6 +183,10 @@
 }
 
 .header-nav__link--active {
+  @media screen and (max-width: 480px) {
+    color: $primary-blue-color;
+  }
+
   @media screen and (min-width: 768px) {
     color: $primary-blue-color;
     &::after {

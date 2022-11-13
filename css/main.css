@@ -516,7 +516,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .header-contact {
-    margin-top: 280px;
+    margin-top: 30vh;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -663,6 +663,11 @@ img {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .header-nav__link--active {
+    color: #2196f3;
+  }
+}
 @media screen and (min-width: 768px) {
   .header-nav__link--active {
     color: #2196f3;
