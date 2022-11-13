@@ -348,31 +348,7 @@ body {
 }
 
 /* visually-hidden */
-.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-@media (max-width: 767px) {
-  .menu {
-    display: none;
-  }
-}
-.menu .link {
-  padding: 10px;
-  color: inherit;
-  text-decoration: none;
-}
-
-.menu .link:hover,
-.menu .link:focus {
-  text-decoration: underline;
-}
-
+/* СТИЛІ ВИПАДАЮЧОГО МЕНЮ */
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
@@ -393,11 +369,6 @@ body {
     display: none;
   }
 }
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 .menu-container {
   position: fixed;
   top: 0;
@@ -427,20 +398,6 @@ body {
   color: #000;
 }
 
-.mobile-menu {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.mobile-menu .link {
-  display: block;
-  padding: 10px;
-  color: #fff;
-  text-decoration: none;
-}
-
-/* СТИЛІ ВИПАДАЮЧОГО МЕНЮ */
 @media screen and (max-width: 767px) {
   .social-box {
     margin-top: 64px;
@@ -521,6 +478,11 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .container-nav {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
   .container-nav {
     display: -webkit-box;
