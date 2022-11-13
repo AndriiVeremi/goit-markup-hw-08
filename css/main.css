@@ -663,10 +663,8 @@ img {
   }
 }
 
-@media screen and (max-width: 480px) {
-  .header-nav__link--active {
-    color: #2196f3;
-  }
+.header-nav__link--active {
+  color: #2196f3;
 }
 @media screen and (min-width: 768px) {
   .header-nav__link--active {

@@ -183,10 +183,9 @@
 }
 
 .header-nav__link--active {
-  @media screen and (max-width: 480px) {
-    color: $primary-blue-color;
-  }
-
+ 
+  color: $primary-blue-color;
+  
   @media screen and (min-width: 768px) {
     color: $primary-blue-color;
     &::after {
