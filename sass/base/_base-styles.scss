@@ -14,18 +14,23 @@
     width: 768px;
   }
 
-  @media screen and (min-width: 1600px) {
-    width: 1600px;
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
 }
 
 /* ОСНОВНІ СТИЛІ */
 
 body {
-  position: relative;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   color: $primary-text-color;
   margin: 0;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
 }

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -123,30 +123,36 @@
           <h2 class="what-dowedo__title">Чим ми займаємося</h2>
           <ul class="product-list">
             <li class="product-list__item">
-              <img
-                src="./images/what_dowedo_img_1.jpg"
+              <div class="thumb">
+              <img             
+                srcset="./images/what_dowedo_1.jpg 1x, ./images/what_dowedo_1@2x.jpg 2x"
+                src="./images/what_dowedo_1.jpg"
                 alt="фото компютера"
                 width="370"
-                height="294"
               />
+              </div>
               <p class="product-list__text">Десктопні додатки</p>
             </li>
             <li class="product-list__item">
+              <div class="thumb">
               <img
-                src="./images/what_dowedo_img_2.jpg"
+                srcset="./images/what_dowedo_2.jpg 1x, ./images/what_dowedo_2@2x.jpg 2x"
+                src="./images/what_dowedo_2.jpg"
                 alt="фото компютера"
                 width="370"
-                height="294"
               />
+              </div>
               <p class="product-list__text">Мобільні додатки</p>
             </li>
             <li class="product-list__item">
+              <div class="thumb">
               <img
-                src="./images/what_dowedo_img_3.jpg"
+                srcset="./images/what_dowedo_3.jpg 1x, ./images/what_dowedo_3@2x.jpg 2x"
+                src="./images/what_dowedo_3.jpg"
                 alt="фото планшета"
                 width="370"
-                height="294"
               />
+              </div>
               <p class="product-list__text">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -161,13 +167,16 @@
           <ul class="person-list">
             <li class="person-list__item">
               <div class="user-meta">
+                <div class="thumb">
                 <img
+                  srcset="./images/team_img_1.jpg   270w, 
+                          ./images/team_img_1@2x.jpg   540w"
                   src="./images/team_img_1.jpg"
                   class="user-meta__foto"
                   alt="фото Ігора Дем'яненка"
-                  width="270"
-                  height="260"
+                  sizes="100vw"
                 />
+              </div>
                 <h3 class="user-meta__name">Ігор Дем'яненко</h3>
                 <p class="user-meta__work">Product Designer</p>
 
@@ -207,13 +216,16 @@
             </li>
             <li class="person-list__item">
               <div class="user-meta">
+                <div class="thumb">
                 <img
+                  srcset="./images/team_img_2.jpg   270w, 
+                          ./images/team_img_2@2x.jpg   540w"
                   src="./images/team_img_2.jpg"
                   class="user-meta__foto"
                   alt="фото Ольги Рєпіної"
-                  width="270"
-                  height="260"
+                  sizes="100vw"
                 />
+              </div>
                 <h3 class="user-meta__name">Ольга Рєпіна</h3>
                 <p class="user-meta__work">Frontend Developer</p>
 
@@ -254,13 +266,16 @@
 
             <li class="person-list__item">
               <div class="user-meta">
+                <div class="thumb">
                 <img
+                  srcset="./images/team_img_3.jpg   270w, 
+                          ./images/team_img_3@2x.jpg   540w"
                   src="./images/team_img_3.jpg"
                   class="user-meta__foto"
                   alt="фото Миколи Тарасова"
-                  width="270"
-                  height="260"
+                  sizes="100vw"
                 />
+              </div>
                 <h3 class="user-meta__name">Микола Тарасов</h3>
                 <p class="user-meta__work">Marketing</p>
 
@@ -300,13 +315,15 @@
             </li>
             <li class="person-list__item">
               <div class="user-meta">
+                <div class="thumb">
                 <img
+                  srcset="./images/team_img_4.jpg   270w, 
+                          ./images/team_img_4@2x.jpg   540w"
                   src="./images/team_img_4.jpg"
                   class="user-meta__foto"
                   alt="фото Михайла Єрмакова"
-                  width="270"
-                  height="260"
-                />
+                  sizes="100vw">
+              </div>
                 <h3 class="user-meta__name">Михайло Єрмаков</h3>
                 <p class="user-meta__work">UI Designer</p>
 

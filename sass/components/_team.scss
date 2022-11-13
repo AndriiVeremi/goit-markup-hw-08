@@ -3,21 +3,21 @@
 .team {
   background-color: #f5f4fa;
   
-  @media screen and (max-width: 1599px) {
+  @media screen and (max-width: 1199px) {
     @include section-mobile(); 
   }
  
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     @include section();
   }
 }
 
 .team__title {
-   @media screen and (max-width: 1599px) {
+   @media screen and (max-width: 1199px) {
      @include title-mobile();
   }
  
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     @include title();
   }
   
@@ -41,7 +41,7 @@
     margin-bottom: 0;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1599px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: calc((100% - 30px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
@@ -53,7 +53,7 @@
     }
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     width: calc((100% - 90px) / 4);
     margin-right: 30px;
     margin-bottom: 30px;
