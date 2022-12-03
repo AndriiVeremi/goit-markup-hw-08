@@ -29,6 +29,10 @@ body {
   margin: 0;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 img {
   display: block;
   height: auto;

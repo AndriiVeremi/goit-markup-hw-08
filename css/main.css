@@ -330,6 +330,10 @@ body {
   margin: 0;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 img {
   display: block;
   height: auto;
@@ -902,15 +906,14 @@ img {
 }
 
 /* Стилі інфо блока */
+.what-dowedo {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 @media screen and (max-width: 1199px) {
   .what-dowedo {
     display: none;
   }
-}
-
-.what-dowedo {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .what-dowedo__title {

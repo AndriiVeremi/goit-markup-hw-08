@@ -1,13 +1,10 @@
 // /* СТИЛІ ЧИМ ЗАЙМАЄМОСЯ */
 
-.what-dowedo {
+.what-dowedo { 
+  @include section();
   @media screen and (max-width: 1199px) {
     display: none;
   }
-}
-
-.what-dowedo {
-  @include section();
 }
 
 .what-dowedo__title {
